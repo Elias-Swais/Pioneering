@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #ff671d;
+  --text-color: #051c2c;
+  --background-color: #fff;
+  /* --- */
+
+  /* Font */
+  --font-family-style: "Archivo", sans-serif;
+  --heading1-font-size-desktop: 3.5rem;
+  --heading2-font-size-desktop: 3rem;
+  --heading3-font-size-desktop: 2.5rem;
+  --heading4-font-size-desktop: 2rem;
+  --heading5-font-size-desktop: 1.5rem;
+  --heading6-font-size-desktop: 1.25rem;
+  --tagline-font-size-desktop: 1rem;
+
+  --text-lg: 1.25rem;
+  --text-md: 1.125rem;
+  --text-rg: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Mobile */
+  --heading1-font-size-mobile: 2.5rem;
+  --heading2-font-size-mobile: 2.25rem;
+  --heading3-font-size-mobile: 2rem;
+  --heading4-font-size-mobile: 1.5rem;
+  --heading5-font-size-mobile: 1.25rem;
+  --heading6-font-size-mobile: 1.125rem;
+
+  /* --- */
+
+  /* Bold */
+  --extra-bold: 800;
+  --bold: 700;
+  --semi-bold: 600;
+  --medium-bold: 500;
+  --rg-bold: 400;
+  --light-bold: 300;
+  --extra-light-bold: 200;
+
+  /* Line Heights */
+  --h1-line-height-desktop: 1.2;
+  --h2-line-height-desktop: 1.2;
+  --h3-line-height-desktop: 1.2;
+  --h4-line-height-desktop: 1.3;
+  --h5-line-height-desktop: 1.4;
+  --h6-line-height-desktop: 1.4;
+  --tag-line-height-desktop: 1.5;
+
+  --text-line-height: 1.5;
+
+  /* Mobile */
+  --h1-line-height-mobile: 1.2;
+  --h2-line-height-mobile: 1.2;
+  --h3-line-height-mobile: 1.2;
+  --h4-line-height-mobile: 1.4;
+  --h5-line-height-mobile: 1.4;
+  --h6-line-height-mobile: 1.4;
+
+  /* --- */
+}
