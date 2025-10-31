@@ -13,16 +13,16 @@
         <img src="/public/images/Company Logo.svg" alt="Pioneering Logo" />
       </a>
           <ul class="h-list">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#trade-solutions">About Us</a></li>
+            <li><a href="#expert-support">Services</a></li>
+            <li><a href="#client-focused">Contact Us</a></li>
             </ul>
             <button class="primary-btn">Inquire</button>
         </div>
       </nav>
     </header>
 
-    <section class="hero">
+    <section id="customs-clearance" class="hero">
        <div class="hero-content">
       <h1>Navigating Trade<br><span>with Trust & Expertise</span></h1>
       <p>
@@ -30,14 +30,13 @@
         with trust, efficiency, and professionalism, ensuring seamless and 
         compliant trade operations.
       </p>
-      <button class="primary-btn two">Contact Us</button>
+      <button onclick="document.getElementById('client-focused').scrollIntoView({ behavior: 'smooth' })" class="primary-btn">Contact Us</button>
     </div>
-    <!-- <div class="hero-image"></div> -->
     </section>
 
 
    <section class="about">
-  <div class="about-container">
+  <div id="trade-solutions" class="about-container">
     <div class="about-image">
       <img src="../public/images/container.jpeg" alt="Pioneering About Image" />
     </div>
@@ -57,7 +56,7 @@
 </section>
 
 
- <section class="map-section">
+ <section id="expert-support" class="map-section">
   <div class="map-container">
     <h2>
       Unlock Seamless Trade with Pioneering's <br />
@@ -101,7 +100,7 @@
   </div>
 </div>
 
-<section class="process">
+<section id="reliable-service" class="process">
   <div class="process-container">
     <h6>Streamlined</h6>
     <h2>Understanding the Customs <br> Clearance Process</h2>
@@ -139,7 +138,7 @@
   </div>
 </section>
 
-<section class="contact">
+<section id="client-focused" class="contact">
   <div class="contact-container">
     <div class="contact-info">
       <h6>Points of contact</h6>
@@ -186,11 +185,11 @@
     </div>
 
     <ul class="footer-links">
-      <li><a href="#">Customs Clearance</a></li>
-      <li><a href="#">Trade Solutions</a></li>
-      <li><a href="#">Expert Support</a></li>
-      <li><a href="#">Reliable Service</a></li>
-      <li><a href="#">Client Focused</a></li>
+      <li><a href="#customs-clearance">Customs Clearance</a></li>
+      <li><a href="#trade-solutions">Trade Solutions</a></li>
+      <li><a href="#expert-support">Expert Support</a></li>
+      <li><a href="#reliable-service">Reliable Service</a></li>
+      <li><a href="#client-focused">Client Focused</a></li>
     </ul>
   </div>
 
