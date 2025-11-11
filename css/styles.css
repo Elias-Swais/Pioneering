@@ -84,12 +84,22 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  padding-top: 80px;
+}
 /* NavBar */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
 .h-list {
