@@ -78,7 +78,8 @@ html {
   scroll-padding-top: 200px;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -96,7 +97,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   color: var(--text-color);
 }
 
@@ -128,8 +129,6 @@ html, body {
   width: 100%;
 }
 
-
-
 .primary-btn {
   color: var(--button-text-color);
   background-color: var(--primary-color);
@@ -159,7 +158,7 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 6rem 8%; 
+  padding: 6rem 8%;
   position: relative;
   overflow: hidden;
 
@@ -188,7 +187,6 @@ h1 {
   color: var(--text-color);
   line-height: 1.6;
 }
-
 
 .about {
   background-color: var(--background-color);
@@ -318,7 +316,6 @@ h1 {
   animation: jiggle 0.7s ease-in;
 }
 
-
 .divider {
   width: 2px;
   height: 60px;
@@ -369,8 +366,9 @@ h1 {
 }
 
 .slide-items {
-  display: inline-block;
+  display: inline-flex;
   animation: slide 10s infinite linear;
+  gap: 30px;
 }
 
 .clients:hover .slide-items {
@@ -379,6 +377,8 @@ h1 {
 
 .slide-items img {
   height: 100px;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 .process {
@@ -452,7 +452,6 @@ h1 {
   color: #666;
   line-height: var(--text-line-height);
 }
-
 
 .contact {
   background-color: var(--background-color);
@@ -715,17 +714,17 @@ h1 {
     align-items: center;
     padding: 4rem 5% 0;
     background-position: center 120%;
-    background-size: 250%; 
+    background-size: 250%;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    
+
     min-height: 100vh;
   }
 
   .hero-content {
     max-width: 90%;
     z-index: 2;
-    margin-bottom: 14rem; 
+    margin-bottom: 14rem;
     position: relative;
   }
 
@@ -742,8 +741,6 @@ h1 {
     margin: 1rem auto 0;
   }
 }
-
-
 
 @media (max-width: 900px) {
   .process {
@@ -778,21 +775,20 @@ h1 {
   }
 }
 
-
 @keyframes jiggle {
-
-  0%, 100%{
+  0%,
+  100% {
     transform: rotate(0deg);
   }
-  25%{
-    transform: rotate(4deg)
+  25% {
+    transform: rotate(4deg);
   }
 
-  50%{
+  50% {
     transform: rotate(-4deg);
   }
 
-  75%{
+  75% {
     transform: rotate(1.5deg);
   }
 }
