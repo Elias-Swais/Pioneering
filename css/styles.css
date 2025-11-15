@@ -377,8 +377,8 @@ h1 {
 
 .slide-items {
   display: inline-flex;
-  animation: slide 10s infinite linear;
-  gap: 30px;
+  animation: slide 15s infinite linear;
+  gap: 150px;
 }
 
 .clients:hover .slide-items {
@@ -389,6 +389,10 @@ h1 {
   height: 100px;
   border-radius: 10px;
   object-fit: contain;
+}
+
+.spacer {
+  width: 100px;
 }
 
 .process {
