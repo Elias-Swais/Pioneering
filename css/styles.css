@@ -377,7 +377,7 @@ h1 {
 
 .slide-items {
   display: inline-flex;
-  animation: slide 25s infinite linear;
+  animation: slide 30s infinite linear;
   gap: 150px;
 }
 
@@ -390,7 +390,10 @@ h1 {
   border-radius: 10px;
   object-fit: contain;
 }
-
+.slide-items img:nth-child(4) {
+  height: 120px;
+  width: auto;
+}
 .spacer {
   width: 100px;
 }
