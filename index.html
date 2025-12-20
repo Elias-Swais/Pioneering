@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Pioneering</title>
   </head>
   <body>
@@ -13,8 +13,9 @@
           <img src="public/images/Company Logo.svg" alt="Pioneering Logo" />
         </a>
         <ul class="h-list">
-          <li><a href="#trade-solutions">About Us</a></li>
           <li><a href="#reliable-service">Services</a></li>
+          <li><a href="#trade-solutions">About Us</a></li>
+          <li><a href="#locations-part">Locations</a></li>
           <li><a href="#client-focused">Contact Us</a></li>
         </ul>
         <button
@@ -43,6 +44,52 @@
       </div>
     </section>
 
+     <section id="reliable-service" class="process">
+      <div class="process-container">
+        <h6>Streamlined</h6>
+        <h2>
+          Our Core Services
+        </h2>
+        <p>
+          Navigating customs clearance can be complex, but our step-by-step
+          process simplifies it for you. We ensure that your goods move smoothly
+          across borders with minimal delays.
+        </p>
+
+        <div class="process-steps">
+          <div class="step">
+            <div class="icon">
+              <img src="public/images/icon-doc.svg" alt="Documentation Icon" />
+            </div>
+            <h4>Documentation Preparation</h4>
+            <p>
+               We gather and check all necessary 
+               documents to initiate the clearance.
+              </p>
+          </div>
+
+          <div class="step">
+            <div class="icon">
+              <img src="public/images/icon-customs.svg" alt="Customs Icon" />
+            </div>
+            <h4>Submission to authorities</h4>
+            <p>Your documents are expertly prepared and submitted for customs.</p>
+          </div>
+
+          <div class="step">
+            <div class="icon">
+              <img src="public/images/icon-delivery.svg" alt="Delivery Icon" />
+            </div>
+            <h4>Logistics Coordination</h4>
+            <p>
+               We coordinate the delivery 
+               of your goods post-clearance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="about">
       <div id="trade-solutions" class="about-container">
         <div class="about-image">
@@ -63,6 +110,34 @@
             service, we make global trade effortless.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section id="locations-part" class="locations-section">
+      <p id="locations-p">Locations</p>
+      <h2>Our offices in Jordan</h2>
+      <p id="locations-text">
+        Based in Jordan, Pioneering maintains multiple offices across the country, 
+        combining experienced customs teams with advanced operational systems to deliver efficient, 
+        reliable, and compliant customs clearance services nationwide.
+      </p>
+      <div class="locations-items">
+      <div class="locations-card">
+      <img src="public/images/marker-blue.svg" alt="marker"/>
+      <h2 id="location">Amman</h2>
+      </div>
+      <div class="locations-card">
+      <img src="public/images/marker-blue.svg" alt="marker"/>
+      <h2 id="location">Airport</h2>
+      </div>
+      <div class="locations-card">
+      <img src="public/images/marker-blue.svg" alt="marker"/>
+      <h2 id="location">Al-Zarqa</h2>
+      </div>
+      <div class="locations-card">
+      <img src="public/images/marker-blue.svg" alt="marker"/>
+      <h2 id="location">Amman</h2>
+      </div>
       </div>
     </section>
 
@@ -98,7 +173,6 @@
     <div class="clients">
       <h2>Our Clients</h2>
       <div class="slide-items">
-        <img src="public/images/client.png" alt="Client Logo" />
         <img src="public/images/client2.jpeg" alt="Client Logo" />
         <img src="public/images/client3.jpeg" alt="Client Logo" />
         <img src="public/images/client4.jpeg" alt="Client Logo" />
@@ -113,7 +187,6 @@
         <img src="public/images/client14.png" alt="Client Logo" />
         <img src="public/images/client15.png" alt="Client Logo" />
 
-        <img src="public/images/client.png" alt="Client Logo" />
         <img src="public/images/client2.jpeg" alt="Client Logo" />
         <img src="public/images/client3.jpeg" alt="Client Logo" />
         <img src="public/images/client4.jpeg" alt="Client Logo" />
@@ -130,47 +203,6 @@
         <div class="spacer"></div>
       </div>
     </div>
-
-    <section id="reliable-service" class="process">
-      <div class="process-container">
-        <h6>Streamlined</h6>
-        <h2>
-          Understanding the Customs <br />
-          Clearance Process
-        </h2>
-        <p>
-          Navigating customs clearance can be complex, but our step-by-step
-          process simplifies it for you. We ensure that your goods move smoothly
-          across borders with minimal delays.
-        </p>
-
-        <div class="process-steps">
-          <div class="step">
-            <div class="icon">
-              <img src="public/images/icon-doc.svg" alt="Documentation Icon" />
-            </div>
-            <h4>Step 1: Documentation Preparation</h4>
-            <p>We gather all necessary documents to initiate the clearance.</p>
-          </div>
-
-          <div class="step">
-            <div class="icon">
-              <img src="public/images/icon-customs.svg" alt="Customs Icon" />
-            </div>
-            <h4>Step 2: Submission to Customs Authorities</h4>
-            <p>Your documents are submitted for customs review and approval.</p>
-          </div>
-
-          <div class="step">
-            <div class="icon">
-              <img src="public/images/icon-delivery.svg" alt="Delivery Icon" />
-            </div>
-            <h4>Step 3: Clearance and Delivery Coordination</h4>
-            <p>We coordinate the delivery of your goods post-clearance.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="client-focused" class="contact">
       <div class="contact-container">
@@ -195,21 +227,23 @@
           </ul>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xzdprbkn" method="post">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" />
+          <input type="text" id="name" placeholder="Enter your name" name="name" required/>
 
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required/>
 
           <label for="message">Message</label>
           <textarea
             id="message"
             rows="5"
+            name="message"
             placeholder="Write your message..."
+            required
           ></textarea>
 
-          <button type="submit" class="primary-btn">Send</button>
+          <button type="submit" class="primary-btn" onclick="this.form.reset()">Send</button>
         </form>
       </div>
     </section>
@@ -226,11 +260,9 @@
         </div>
 
         <ul class="footer-links">
-          <li><a href="#customs-clearance">Customs Clearance</a></li>
-          <li><a href="#trade-solutions">Trade Solutions</a></li>
-          <li><a href="#expert-support">Expert Support</a></li>
-          <li><a href="#reliable-service">Reliable Service</a></li>
-          <li><a href="#client-focused">Client Focused</a></li>
+          <li><a href="termsOfUse.html">Terms of Use</a></li>
+          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+          <li><a href="termsAndConditions.html">Terms & Conditions</a></li>
         </ul>
       </div>
 
