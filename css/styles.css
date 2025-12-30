@@ -76,7 +76,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 200px;
-
 }
 
 html,
@@ -629,9 +628,9 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;    
+  align-items: center;
   margin-top: 150px;
-  margin-bottom: 150px; 
+  margin-bottom: 150px;
   gap: 10px;
   line-height: var(--h1-line-height-desktop);
 }
@@ -661,9 +660,9 @@ h1 {
 
 .locations-items {
   display: flex;
-  gap: 32px;             
+  gap: 32px;
   margin-top: 2.5rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -692,7 +691,7 @@ h1 {
 }
 
 .locations-card:hover {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
 }
 
 .terms-section {
@@ -840,8 +839,80 @@ h1 {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 50px 40px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
 
+.success-icon {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+.close-btn {
+  width: 100%;
+  padding: 16px 25px;
+  border: none;
+  background-color: #0a1f3d;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #162d4a;
+}
+
+.error-icon {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #6b7280;
+}
 /* Responsive */
 
 @media (max-width: 900px) {

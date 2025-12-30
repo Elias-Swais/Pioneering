@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Pioneering</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ZjI3yWlsUBqJs5jbt",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -44,12 +55,10 @@
       </div>
     </section>
 
-     <section id="reliable-service" class="process">
+    <section id="reliable-service" class="process">
       <div class="process-container">
         <h6>Streamlined</h6>
-        <h2>
-          Our Core Services
-        </h2>
+        <h2>Our Core Services</h2>
         <p>
           Navigating customs clearance can be complex, but our step-by-step
           process simplifies it for you. We ensure that your goods move smoothly
@@ -63,9 +72,9 @@
             </div>
             <h4>Documentation Preparation</h4>
             <p>
-               We gather and check all necessary 
-               documents to initiate the clearance.
-              </p>
+              We gather and check all necessary documents to initiate the
+              clearance.
+            </p>
           </div>
 
           <div class="step">
@@ -73,7 +82,9 @@
               <img src="public/images/icon-customs.svg" alt="Customs Icon" />
             </div>
             <h4>Submission to authorities</h4>
-            <p>Your documents are expertly prepared and submitted for customs.</p>
+            <p>
+              Your documents are expertly prepared and submitted for customs.
+            </p>
           </div>
 
           <div class="step">
@@ -81,10 +92,7 @@
               <img src="public/images/icon-delivery.svg" alt="Delivery Icon" />
             </div>
             <h4>Logistics Coordination</h4>
-            <p>
-               We coordinate the delivery 
-               of your goods post-clearance.
-            </p>
+            <p>We coordinate the delivery of your goods post-clearance.</p>
           </div>
         </div>
       </div>
@@ -117,27 +125,28 @@
       <p id="locations-p">Locations</p>
       <h2>Our offices in Jordan</h2>
       <p id="locations-text">
-        Based in Jordan, Pioneering maintains multiple offices across the country, 
-        combining experienced customs teams with advanced operational systems to deliver efficient, 
-        reliable, and compliant customs clearance services nationwide.
+        Based in Jordan, Pioneering maintains multiple offices across the
+        country, combining experienced customs teams with advanced operational
+        systems to deliver efficient, reliable, and compliant customs clearance
+        services nationwide.
       </p>
       <div class="locations-items">
-      <div class="locations-card">
-      <img src="public/images/marker-blue.svg" alt="marker"/>
-      <h2 id="location">Amman</h2>
-      </div>
-      <div class="locations-card">
-      <img src="public/images/marker-blue.svg" alt="marker"/>
-      <h2 id="location">Airport</h2>
-      </div>
-      <div class="locations-card">
-      <img src="public/images/marker-blue.svg" alt="marker"/>
-      <h2 id="location">Al-Zarqa</h2>
-      </div>
-      <div class="locations-card">
-      <img src="public/images/marker-blue.svg" alt="marker"/>
-      <h2 id="location">Amman</h2>
-      </div>
+        <div class="locations-card">
+          <img src="public/images/marker-blue.svg" alt="marker" />
+          <h2 id="location">Amman</h2>
+        </div>
+        <div class="locations-card">
+          <img src="public/images/marker-blue.svg" alt="marker" />
+          <h2 id="location">Airport</h2>
+        </div>
+        <div class="locations-card">
+          <img src="public/images/marker-blue.svg" alt="marker" />
+          <h2 id="location">Al-Zarqa</h2>
+        </div>
+        <div class="locations-card">
+          <img src="public/images/marker-blue.svg" alt="marker" />
+          <h2 id="location">Amman</h2>
+        </div>
       </div>
     </section>
 
@@ -192,7 +201,7 @@
         <img src="public/images/client4.jpeg" alt="Client Logo" />
         <img src="public/images/client6.jpeg" alt="Client Logo" />
         <img src="public/images/client7.jpeg" alt="Client Logo" />
-         <img src="public/images/client8.jpg" alt="Client Logo" />
+        <img src="public/images/client8.jpg" alt="Client Logo" />
         <img src="public/images/client9.jpg" alt="Client Logo" />
         <img src="public/images/client10.jpg" alt="Client Logo" />
         <img src="public/images/client11.jpg" alt="Client Logo" />
@@ -227,12 +236,24 @@
           </ul>
         </div>
 
-        <form class="contact-form" action="https://formspree.io/f/xzdprbkn" method="post">
+        <form id="contact-form" class="contact-form">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" name="name" required/>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
 
           <label for="message">Message</label>
           <textarea
@@ -243,7 +264,7 @@
             required
           ></textarea>
 
-          <button type="submit" class="primary-btn" onclick="this.form.reset()">Send</button>
+          <button type="submit" class="primary-btn">Send</button>
         </form>
       </div>
     </section>
@@ -271,5 +292,76 @@
       </div>
     </footer>
     <script defer src="script.js"></script>
+
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="32"
+              cy="32"
+              r="30"
+              stroke="#22c55e"
+              stroke-width="4"
+              fill="none"
+            />
+            <path
+              d="M20 32L28 40L44 24"
+              stroke="#22c55e"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h2>Message sent successfully!</h2>
+        <p>
+          Thank you for reaching out to us.<br />We have received your message
+          and will get back to you soon
+        </p>
+        <button class="close-btn" id="close-success">Close</button>
+      </div>
+    </div>
+
+    <div id="failure-modal" class="modal">
+      <div class="modal-content">
+        <div class="error-icon">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="32"
+              cy="32"
+              r="30"
+              stroke="#ef4444"
+              stroke-width="4"
+              fill="none"
+            />
+            <path
+              d="M24 24L40 40M40 24L24 40"
+              stroke="#ef4444"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <h2>Something went wrong!</h2>
+        <p>
+          We're sorry, but your message could not be sent at <br />this time.
+          Please try again later
+        </p>
+        <button class="close-btn" id="close-failure">Close</button>
+      </div>
+    </div>
   </body>
 </html>
