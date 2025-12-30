@@ -1,6 +1,8 @@
-const copy = document.querySelector(".slide-items").cloneNode(true);
-document.querySelector(".clients").appendChild(copy);
-
+const slideItems = document.querySelector(".slide-items");
+if (slideItems) {
+  const copy = slideItems.cloneNode(true);
+  document.querySelector(".clients").appendChild(copy);
+}
 const form = document.getElementById("contact-form");
 const successModal = document.getElementById("success-modal");
 const failureModal = document.getElementById("failure-modal");
