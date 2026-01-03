@@ -450,12 +450,16 @@ h1 {
   flex: 1;
   min-width: 280px;
   max-width: 320px;
+  max-height: 200px;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 56px 24px 40px; 
   text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
 }
 
 .step .icon {
@@ -679,7 +683,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   flex-direction: column;
   gap: 10px;
@@ -914,7 +918,6 @@ h1 {
   cursor: not-allowed;
   background-color: #6b7280;
 }
-/* Responsive */
 
 @media (max-width: 900px) {
   .contact {
@@ -936,6 +939,27 @@ h1 {
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 200px; 
+  }
+}
+@media (max-width: 768px) {
+  .policy-toc {
+    display: none;
+  }
+  
+  .policy-layout {
+    display: block;
+  }
+  
+  .policy-content {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 
 @media (max-width: 900px) {
   .contact-container {
