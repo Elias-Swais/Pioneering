@@ -454,7 +454,7 @@ h1 {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 56px 24px 40px; /* 👈 more space on top */
+  padding: 56px 24px 40px; 
   text-align: center;
 }
 
