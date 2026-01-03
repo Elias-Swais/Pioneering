@@ -450,17 +450,18 @@ h1 {
   flex: 1;
   min-width: 280px;
   max-width: 320px;
-  text-align: center;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 56px 24px 40px; /* 👈 more space on top */
+  text-align: center;
 }
 
 .step .icon {
   height: 60px;
   width: 60px;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 0.75rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,7 +470,7 @@ h1 {
 .step h4 {
   font-size: var(--heading6-font-size-desktop);
   font-weight: var(--bold);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .step p {
